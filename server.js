@@ -12,17 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client/build")));
-  app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
-  });
-}
-
-app.listen(port, (error) => {
-  if (error) throw error;
-  console.log("server running");
-});
 
 app.get("/auctions", (req, res) => {
   https
@@ -48,3 +37,17 @@ app.get("/auctions", (req, res) => {
       console.log("Error: " + err.message);
     });
 });
+
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "client/build")));
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  });
+}
+
+app.listen(port, (error) => {
+  if (error) throw error;
+  console.log("server running");
+});
+
