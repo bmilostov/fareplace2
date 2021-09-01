@@ -14,8 +14,7 @@ const AuctionCard = ({ auction }) => {
   return (
     <CardContainer>
       {/* <CardMedia className="media" image={imageUrl} title="" />  */}
-      <CardImageContainer src={imageUrl} alt="" />
-      <link rel="preload" as="image" href={imageUrl} />
+      <CardImageContainer src={imageUrl} alt="city" />
       <CardContent>
         <FromTo from={inboundId} to={outboundId} />
         <NumberOfViews numberOfViews={viewersCount} />

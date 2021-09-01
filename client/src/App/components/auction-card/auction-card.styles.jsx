@@ -19,8 +19,8 @@ export const CardContainer = styled(Card)`
 `;
 
 export const CardImageContainer = styled.img`
-  height: 356px;
-  width: 250px;
+  height: auto;
+  width: 100%;
   background-position: center;
   background-size: cover;
 `;
