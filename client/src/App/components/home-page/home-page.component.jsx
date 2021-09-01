@@ -21,7 +21,7 @@ const HomePage = () => {
       <div>
         <Grid container spacing={2} justifyContent="center">
           <Grid item>
-            <LinkButton  to="/auctions" color="secondary">
+            <LinkButton  to="/auctionsPage" color="secondary">
               Discover Auctions
             </LinkButton>
           </Grid>

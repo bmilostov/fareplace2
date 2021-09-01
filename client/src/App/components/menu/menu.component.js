@@ -9,7 +9,7 @@ const Menu = () => {
     <List component="nav">
       <ListItem component="div">
         <ListItemText >
-            <MenuLink to="/auctions">Auctions</MenuLink>
+            <MenuLink to="/auctionsPage">Auctions</MenuLink>
         </ListItemText>
       </ListItem>
     </List>

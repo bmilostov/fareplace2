@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Suspense fallback={<div>...Loading</div>}>
-          <Route path="/auctions" component={AuctionsListLazy} />
+          <Route path="/auctionsPage" component={AuctionsListLazy} />
         </Suspense>
       </Switch>
     </div>
